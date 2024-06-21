@@ -31,7 +31,6 @@ pub fn type_command(path_buf: &Vec<PathBuf>, args: &str) {
     }
 }
 
-
 pub fn echo_command(args: &str) {
     println!("{args}")
 }
