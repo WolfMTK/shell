@@ -11,7 +11,6 @@ pub fn get_path() -> Vec<PathBuf> {
         .collect::<Vec<_>>()
 }
 
-
 fn tokenize(input: &str) -> (&str, &str) {
     input.split_once(" ").unwrap_or((input, ""))
 }
