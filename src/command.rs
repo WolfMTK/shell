@@ -12,10 +12,9 @@ pub fn pwd_command() {
 pub fn find_command(command: &str, path: &[PathBuf]) -> Option<PathBuf> {
     if let Some(path) =
         path.iter().find(|dir| dir.join(command).is_file()) {
-        Some(path.join(command))
-    } else {
-        None
+        return Some(path.join(command))
     }
+    return None;
 }
 
 pub fn type_command(path_buf: &Vec<PathBuf>, args: &str) {
