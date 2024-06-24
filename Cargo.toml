@@ -2,7 +2,7 @@
 name = "shell"
 version = "0.1.0"
 authors = ["Alexander qrer71@yandex.ru"]
-edition = "2024"
+edition = "2021"
 
 [dependencies]
 anyhow = "1.0.68"                                # error handling
